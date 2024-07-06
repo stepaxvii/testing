@@ -44,7 +44,7 @@ def take_value_from_google_sheets():
         'https://www.googleapis.com/auth/drive'
     ]
     creds = ServiceAccountCredentials.from_json_keyfile_name(
-        r'D:\Dev\testing\сredentials.json',
+        'сredentials.json',
         scope
     )
     client = gspread.authorize(creds)
@@ -60,7 +60,7 @@ def save_valid_date(user_date):
         'https://www.googleapis.com/auth/drive'
     ]
     creds = ServiceAccountCredentials.from_json_keyfile_name(
-        r'D:\Dev\testing\сredentials.json',
+        'сredentials.json',
         scope
     )
     client = gspread.authorize(creds)
